@@ -1,5 +1,5 @@
-## Eye Glasses E-Commerce App
-#### Welcome to our Eye Glasses E-Commerce App! This app is designed to provide you with a seamless shopping experience for all your eye glasses needs.
+## HelpLine E-Commerce App
+#### Welcome to our helpLiine E-Commerce App! This app is designed to provide you with a seamless shopping experience for all your eye glasses needs.
 ### Features
 * **Browse Products** : Explore our wide selection of eye glasses by browsing through our catalog or using the Product Search feature.
 * **Add to Wishlist or Cart** : Found something you love? Add it to your Wishlist to save it for later, or add it to your Cart to proceed to checkout.
@@ -16,8 +16,8 @@
 ## Usage
 ##### To rund this project locally, follow these steps.
 1. Clone this repository.
-2. Install dependencies using **npm install**.
-3. Start the server using **npm start**.
+2. Install dependencies using **npm i Vite@latest**.
+3. Start the server using **npm run dev**.
 4. Open your browser and navigate to http://localhost:port (replace port with the port number configured in your environment).
 
 
