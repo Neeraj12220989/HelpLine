@@ -1,0 +1,29 @@
+/* Styling for the Bottom Section: "Made with Love" and Social Links */
+.footer-socials {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-social-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f4a261;
+}

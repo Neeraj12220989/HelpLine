@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }}>
         <LazyLoadImage
           alt=""
-          src="https://raw.githubusercontent.com/SandhyaR1007/eyesome-react/main/src/assets/loading.gif"
+          src="https://cdnl.iconscout.com/lottie/premium/thumb/loading-tiles-six-hands-spin-half-5020422-4175311.gif"
           width="130px"
           style={{
             borderRadius: "1.5rem",

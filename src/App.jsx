@@ -30,6 +30,8 @@ import ClearIcon from "@mui/icons-material/Clear";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import SearchIcon from "@mui/icons-material/Search";
 import ListItems from "./components/search";
+import Footer from "./components/Footer";
+import Footersocials from "./components/Footersocials";
 export const AppData = createContext();
 function App() {
   const theme = useTheme();
@@ -425,7 +427,8 @@ function App() {
         </Routes>
         <ListItems />
       </AppData.Provider>
-     
+        <Footer />
+        <Footersocials />
     </HashRouter>
   );
 }
