@@ -72,12 +72,6 @@ const GlassCategory = () => {
   }, [glasstype]);
   const btns = ["All", "Men", "Women", "Unisex"];
   const categories = ["Vision", "Sunglasses", "Sports"];
-  const ratingtypes = [
-    "1 Stars & above",
-    "2 Stars & above",
-    "3 Stars & above",
-    "4 Stars & above",
-  ];
   const result = Object.groupBy(products, ({ price }) => price);
   const args = Object.keys(result);
   const minmax = args.map((el) => parseInt(el));
@@ -428,47 +422,6 @@ const GlassCategory = () => {
               </Stack>
             );
           })}
-          <Typography
-            variant="h6"
-            sx={{
-              marginTop: 2,
-              pb: 1,
-            }}
-          >
-            Rating
-          </Typography>
-          <RadioGroup
-            onChange={(e) => {
-              const ratedprod = products.filter(
-                (el) => el.rating >= parseInt(e.currentTarget.value)
-              );
-              setGlasstype(ratedprod);
-              dispatch({ type: "close-drawer" });
-            }}
-          >
-            {Array.from(ratingtypes, (ratingtype, index) => {
-              return (
-                <FormControlLabel
-                  key={index}
-                  value={ratingtype}
-                  control={
-                    <Radio
-                      size="small"
-                      label={ratingtype}
-                      checked={selectedIndex === index ? true : false}
-                      onChange={() => setSelectedIndex(index)}
-                      sx={{
-                        "&.Mui-checked": {
-                          color: "#252525",
-                        },
-                      }}
-                    />
-                  }
-                  label={ratingtype}
-                />
-              );
-            })}
-          </RadioGroup>
         </Box>
       </Drawer>
       {snackbar_item}

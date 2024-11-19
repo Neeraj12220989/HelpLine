@@ -14,6 +14,8 @@ import { categories } from "../categories";
 import { AppData } from "../App";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link,useNavigate } from "react-router-dom";
+import Footer from "./Footer";
+import Footersocials from "./Footersocials";
 
 const Home = () => {
   const { mobile } = useContext(AppData);
@@ -27,7 +29,7 @@ const Home = () => {
         spacing={2}
         direction="row"
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent="space-around"
       >
         <Stack>
           <Typography variant={mobile ? "h2" : "h1"}>
@@ -40,7 +42,7 @@ const Home = () => {
               paddingBlockStart: 3,
             }}
           >
-            Buy the best high-quality sunglasses from us.
+            Buy the best high-quality Optical Lens from us.
             <br />
             More than 100 types of assortment.
           </Typography>

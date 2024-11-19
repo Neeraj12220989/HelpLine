@@ -237,13 +237,13 @@ const Bag = () => {
           <Box
             sx={{
               width: "100%",
-              position: "fixed",
+              position: "relative",
               bottom: 0,
               left: 0,
               right: 0,
               backgroundColor: "whitesmoke",
               borderTop: "2px solid charcoal",
-              padding: 2,
+              padding: 1,
             }}
           >
             <Stack
@@ -287,6 +287,7 @@ const Bag = () => {
             </Stack>
           </Box>
         </>
+       
       )}
     </Container>
   );
